@@ -26,16 +26,16 @@ const Recipe = ({
                 className={Style.recipe__imageContent}
               />
             </div>
-            
+
             <div className={Style.recipe__caution}>
-            <p className={Style.caution}>Caution</p>
+              <p className={Style.caution}>Caution</p>
               {cautions.map((cautions) => (
                 <li className={Style.recipe__cautionContent}>{cautions}</li>
               ))}
             </div>
           </div>
           <div className={Style.main__cuisineType}>
-          <p className={Style.cuisin}>Cuisin Type</p>
+            <p className={Style.cuisin}>Cuisin Type</p>
             <h2>{cuisineType}</h2>
           </div>
           <div>
