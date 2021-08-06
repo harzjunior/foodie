@@ -27,16 +27,12 @@ const Recipe = ({
               />
             </div>
 
-            <div className={Style.recipe__caution}>
-              <p className={Style.caution}>Caution</p>
-              {cautions.map((cautions) => (
-                <li className={Style.recipe__cautionContent}>{cautions}</li>
-              ))}
-            </div>
+            
           </div>
+          
           <div className={Style.main__cuisineType}>
-            <p className={Style.cuisin}>Cuisin Type</p>
-            <h2>{cuisineType}</h2>
+            <p className={Style.cuisin}>Cuisin</p>
+            <h3>{cuisineType}</h3>
           </div>
           <div>
             <ul className={Style.recipe__list}>
@@ -46,19 +42,12 @@ const Recipe = ({
             </ul>
           </div>
         </div>
-        <div className={Style.main__righSection}>
-          <div className={Style.main__rightSectionContent}>
-            {healthLabels.map((healthLabels) => (
-              <li className={Style.recipe__healthLabels}>{healthLabels}</li>
-            ))}
-          </div>
-        </div>
       </div>
 
       <div className={Style.recipe__calory}>
-        <h3 className={Style.recipe__caloryContent}>
+        <h2 className={Style.recipe__caloryContent}>
           Total Calories: {calories}
-        </h3>
+        </h2>
       </div>
     </div>
   );
