@@ -15,7 +15,6 @@
     justify-content: center;
     align-items: center;
     background-color: purple;
-
 }
 
 form{
@@ -23,6 +22,8 @@ form{
     position: sticky;
     width: 100%;
     top: 0;
+    box-shadow: 0px 5px 20px white;
+    border-bottom: 1px solid crimson;
 }
 
 .search__bar{
