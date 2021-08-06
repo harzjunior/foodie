@@ -15,11 +15,9 @@ const Recipe = ({
       <div className={Style.main__title__content}>
         <h1 className={Style.main__title}>{title}</h1>
       </div>
-
       <div className={Style.recipe__image}>
         <img src={image} alt={title} className={Style.recipe__imageContent} />
       </div>
-      
       <div className={Style.main__content}>
         <div className={Style.main__cuisineType}>
           <p className={Style.cuisin}>Cuisin</p>
@@ -34,11 +32,9 @@ const Recipe = ({
           </ul>
         </div>
       </div>
-
       <div className={Style.recipe__calory}>
-        <h2 className={Style.recipe__caloryContent}>
-          Total Calories: {Math.round(calories)}
-        </h2>
+        <h2 className={Style.recipe__caloryContent}>Total Calories:</h2>
+        <em>{Math.round(calories)}</em>
       </div>
     </div>
   );

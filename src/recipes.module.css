@@ -1,111 +1,148 @@
-ul{
-    list-style: circle;
-    box-shadow: 0px 2px 14px rgb(128, 0, 128);
-    border-radius: 10px;
-    padding: 15px 15px 15px 30px;
-    margin: 20px 0;
-}
-li{
-    padding: 3px;
+html{
+    padding-bottom: 50px;
+    position: relative;
 }
 
-.main{
-    border-radius: 10px;
-    box-shadow: 0px 5px 20px rgb(71, 71, 71);
-    margin: 5px;
-    padding: 20px;
-    background: white; 
-    overflow: scroll;
-    width: 56%;
+ul {
+  list-style: circle;
+  box-shadow: 0px 2px 14px rgb(128, 0, 128);
+  border-radius: 10px;
+  padding: 15px 15px 15px 30px;
+  margin: 20px 0;
+}
+li {
+  padding: 3px;
 }
 
-.main__title__content{
-    color: purple;
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-    border-radius: 10px;
+.main {
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgb(71, 71, 71);
+  margin: 5px;
+  padding: 20px;
+  background: white;
+  overflow: scroll;
+  width: 56%;
 }
 
-.main__title{
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow:
-     inset 0 -3em 3em rgba(0,0,0,0.1),
-           0 0  0 2px purple,
-           0.3em 0.3em 1em rgba(255,255,255,0.3);
+.main__title__content {
+  color: purple;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
 }
 
-img{
-    border-radius: 10px;
-    box-shadow: 0px 5px 20px rgb(128, 0, 128);
-    margin-top: 3px;
+.main__title {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px purple,
+    0.3em 0.3em 1em rgba(255, 255, 255, 0.3);
 }
 
-.recipe__image{
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 5px 20px rgb(128, 0, 128);
-    margin-top: 30px;
-    border-radius: 10px;
+img {
+  border-radius: 10px;
+  margin-top: 3px;
+  box-shadow: 0px 5px 20px rgb(128, 0, 128);
 }
 
-.cuisin{
-    border: none;
-    padding: 9px;
-    color: purple;
-    font-weight: bold;
-    margin: 20px 10px 20px 0;
-    text-align: center;
-    font-size: 24px;
-    text-decoration: underline;
+.recipe__image {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgb(128, 0, 128);
+  margin-top: 60px;
+  border-radius: 10px;
 }
 
-.ingredient{
-    color: #696969;
-    font-weight: bold;
-    font-size: 24px;
-    text-decoration: underline;
+.cuisin {
+  border: none;
+  padding: 9px;
+  color: purple;
+  font-weight: bold;
+  margin: 20px 10px 20px 0;
+  /* text-align: center; */
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.ingredient {
+  color: #696969;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: underline;
+  padding-bottom: 20px;
 }
 
 /* wraps div content */
-.main__cuisineType{
-    display: flex;
-    flex-wrap: wrap;
-    margin: -10px 0 -20px 0;
+.main__cuisineType {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 -20px 0;
 }
 
-h3{
-    color: #696969;
-    padding-top: 33px;
-    border-radius: 10px;
+h3 {
+  color: crimson;
+  padding-top: 33px;
+  border-radius: 10px;
+  padding-bottom: 10px;
 }
 
-.recipe__ingredient{
-    color: black;
-    line-height: 24px;
-    font-family: 'roboto', arial, helvetica;
+.recipe__ingredient {
+  color: black;
+  line-height: 24px;
 }
 
-.recipe__ingredient{
-    display: flex;
-    flex-wrap: wrap;
+.recipe__ingredient {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.recipe__calory{
-    box-shadow: 0 0 10px rgb(128, 0, 128);
-    border-radius: 10px;
+.recipe__calory {
+  display: flex;
+  box-shadow: 0 0 10px rgb(128, 0, 128);
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.recipe__caloryContent {
+  padding: 9px;
+  color: purple;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  text-decoration: underline;
+}
+em {
+  padding: 9px;
+  color: crimson;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 0) and (max-width: 480px) {
+  .main {
     width: 100%;
-    margin-top: 40px;
+    max-width: 480px;
+  }
 }
 
-.recipe__caloryContent{
-    justify-content: flex-end;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow:
-     inset 0 -3em 3em rgba(0,0,0,0.1),
-           0 0  0 2px purple,
-           0.3em 0.3em 1em rgba(0,0,0,0.3);
-}
-
+@media screen and (min-width: 481px) and (max-width: 799px) {
+    .main {
+      width: 100%;
+      max-width: 800px;
+    }
+  }
+  
+  @media screen and (min-width: 800px) and (max-width: 1200px) {
+    .main {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+  @media screen and (min-width: 1201) and (max-width: 1400) {
+    .main {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
