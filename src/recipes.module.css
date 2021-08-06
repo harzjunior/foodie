@@ -85,7 +85,7 @@ h3{
 .recipe__ingredient{
     color: black;
     line-height: 24px;
-    font-family: roboto, arial, helvetica;
+    font-family: 'roboto', arial, helvetica;
 }
 
 .recipe__ingredient{
