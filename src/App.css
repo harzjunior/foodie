@@ -1,6 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .App{
-    min-height: auto;
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-width: 350px;
 }
 
 .search__form{
@@ -9,6 +13,14 @@
     justify-content: center;
     align-items: center;
     background-color: purple;
+
+}
+
+form{
+    background-image: linear-gradient(-180deg, black 20%, purple 70%);
+    position: sticky;
+    width: 100%;
+    top: 0;
 }
 
 .search__bar{
@@ -27,8 +39,9 @@
 
 .recipes{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 10px;
-    padding: 15px;
+    margin: 0;
+    padding: 0;
+    background: #8E8E8E;
 }

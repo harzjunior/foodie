@@ -2,24 +2,30 @@ ul{
     list-style: circle;
     box-shadow: 0px 2px 14px rgb(128, 0, 128);
     border-radius: 10px;
+    padding: 15px 15px 15px 30px;
+    margin: 20px 0;
+}
+li{
+    padding: 3px;
 }
 
 .main{
+    /* height: 100vh; */
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgb(71, 71, 71);
     margin: 5px;
     padding: 20px;
     background: white; 
-    height: 100vh;
-    overflow:scroll;
-    width: auto;
-
+    overflow: scroll;
+    width: 56%;
 }
+
 .main__title__content{
     color: purple;
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .main__title{
@@ -28,66 +34,21 @@ ul{
     box-shadow:
      inset 0 -3em 3em rgba(0,0,0,0.1),
            0 0  0 2px purple,
-           0.3em 0.3em 1em rgba(0,0,0,0.3);
+           0.3em 0.3em 1em rgba(255,255,255,0.3);
 }
 
-.main__content{
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-    
-}
-
-.main__leftSection{
-    border-radius: 10px;
-    width: 100%;
-    justify-content: center;
-    padding: 10px;
-    box-shadow: 0 7px 4px rgb(128, 0, 128);
-} 
-
-.main__leftSectionContent{
-    display: flex;
-}
-
-.recipe__imageContent{
+img{
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgb(128, 0, 128);
-    margin: 0 0 0 0;
-    width: 250px;
-    height: 250px
+    margin-top: 3px;
 }
 
-.header__caution{
-    color: purple;
-    width: 100%;
+.recipe__image{
     text-align: center;
-    border-bottom: 1px solid purple;
-}
-
-.header__caution p{
-    font-size: 23px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.recipe__caution{
-    display: flex;
-    height: 10%;
-    flex-wrap: wrap;
-    margin: 0 10px 0 10px;
-    list-style: none; 
-    width: 100%;
-}
-
-.recipe__cautionContent{
-    display: inline-block;
-    padding: 9px;
+    background-color: white;
+    box-shadow: 0px 5px 20px rgb(128, 0, 128);
+    margin-top: 30px;
     border-radius: 10px;
-    font-size: 15px;
-    margin: 5px;
-    font-weight: bold;
-    color: red;
 }
 
 .cuisin{
@@ -117,13 +78,8 @@ ul{
 
 h3{
     color: #696969;
-    padding-top: 14px;
+    padding-top: 33px;
     border-radius: 10px;
-}
-
-.recipe__list{
-    padding: 15px 15px 15px 30px;
-
 }
 
 .recipe__ingredient{
@@ -132,16 +88,20 @@ h3{
     font-family: roboto, arial, helvetica;
 }
 
-
+.recipe__ingredient{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .recipe__calory{
     box-shadow: 0 0 10px rgb(128, 0, 128);
-    filter: blur(7);
     border-radius: 10px;
     width: 100%;
+    margin-top: 40px;
 }
 
 .recipe__caloryContent{
+    justify-content: flex-end;
     padding: 10px;
     border-radius: 10px;
     box-shadow:
@@ -149,3 +109,4 @@ h3{
            0 0  0 2px purple,
            0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
+
