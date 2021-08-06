@@ -36,6 +36,7 @@ const Recipe = ({
           </div>
           <div>
             <ul className={Style.recipe__list}>
+            <p className={Style.ingredient}>Ingredients</p>
               {ingredients.map((ingredients) => (
                 <li className={Style.recipe__ingredient}>{ingredients.text}</li>
               ))}
