@@ -34,7 +34,7 @@ const Recipe = ({
       </div>
       <div className={Style.recipe__calory}>
         <h2 className={Style.recipe__caloryContent}>Total Calories:</h2>
-        <em>{Math.round(calories)}</em>
+        <em>{Math.round((calories)/(4.184))}</em>
       </div>
     </div>
   );
