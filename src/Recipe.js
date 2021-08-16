@@ -1,15 +1,7 @@
 import React from "react";
 import Style from "./recipes.module.css";
 
-const Recipe = ({
-  title,
-  calories,
-  image,
-  ingredients,
-  cuisineType,
-  healthLabels,
-  cautions,
-}) => {
+const Recipe = ({ title, calories, image, ingredients, cuisineType }) => {
   return (
     <div className={Style.main}>
       <div className={Style.main__title__content}>
@@ -34,8 +26,7 @@ const Recipe = ({
       </div>
       <div className={Style.recipe__calory}>
         <h2 className={Style.recipe__caloryContent}>Total Calories:</h2>
-        <em>{Math.round((calories)/(4.184))} kcal
-        </em>
+        <em>{Math.round(calories / 4.184)} kcal</em>
       </div>
     </div>
   );
